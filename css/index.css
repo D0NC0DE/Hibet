@@ -11,6 +11,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+
 div.logo {
     position: absolute;
     left: 6vw;
@@ -30,7 +32,23 @@ div.conwal {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 900;
-    font-size: 2.44vh;
+    font-size: 16px;
+    line-height: 150%;  
+}
+
+div.connected {
+    position: absolute;
+    left: 68.86vw;
+    top: 3.66vh;
+    padding: 1.1vh 4.7vw;
+    border-radius: 8px;
+    background-color: white;
+    color: #1E1E38;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
     line-height: 150%;  
 }
 
@@ -58,7 +76,21 @@ p.intro {
 }
 
 p.connect {
-    width: 11.2vw;
+    width: fit-content;
+    padding: 5px 5.6vw;
+    background-color: #fff;
+    border-radius: 24px;
+    color: #1E1E38;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+p.enterapp {
+ 
+    width: fit-content;
     padding: 5px 5.6vw;
     background-color: #fff;
     border-radius: 24px;
@@ -82,7 +114,7 @@ p.connect {
 
     position: absolute;
     top: 20vh;
-    right: -100px;
+    right: -4px;
 }
 
 .image2 {
@@ -100,13 +132,13 @@ p.connect {
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 .image3 {
-      animation-delay: 2s;
+      animation-delay: 1s;
     }
 .image2 {
-      animation-delay: 1s;
+      animation-delay: 0.5s;
     }
 .image1 {
       animation-delay: 0;
@@ -117,17 +149,61 @@ p.connect {
 @keyframes multiple-image-crossfade {
   0% {
     opacity:1;
+    z-index: 1;
   }
   17% {
     opacity:1;
   }
   25% {
-    opacity:0;
+    opacity:0.1;
   }
   92% {
-    opacity:0;
+    opacity:0.1;
   }
   100% {
     opacity:1;
   }
 }
+
+.walpopup {
+    display: none;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+   margin-top: 180px;
+}
+
+.walletoption {
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.walletoption p{
+    text-align: center;
+    background-color: #1D1F4B;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 41px;
+    padding: 12px 36px;
+    margin: 12px;
+}
+
+.walletconnect {
+    opacity: 0.7;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.fortmatic {
+    opacity: 0.7;
+    border-radius: 0px 0px 8px 8px;
+}
+

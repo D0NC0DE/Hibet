@@ -37,10 +37,20 @@
     <body>
         <header>
                 <div class="logo"><a href="index.html"><img src="img/logo.png" width="100%"></a></div>
-                <div class="conwal">Connect your Wallet</div>
+                <div id="conwal" class="conwal">Connect your Wallet</div>
+                <div id="connected" class="connected"></div>
         </header>
+
+        <div id="wallpop" class="walpopup">
+            <div id="close" class="close"><img src="img/close.png"></div>
+            <div class="walletoption">
+                <p class="walletconnect">Wallet Connect</p>
+                <p class="metamask">Launch Metamask</p>
+                <p class="fortmatic">Launch Fortmatic</p>
+            </div>
+        </div>
         
-        <div class="main">
+        <div id="main" class="main">
             <div class="section">
                 <h1 class="pname">HiBet</h1>
                 <p class="intro">The first Bet-to-earn (B2E) plaform on Nervos network within 
@@ -48,7 +58,8 @@
                     rewards through their skills and prediction. 
                  </p>
 
-                 <p class="connect">CONNECT</p>
+                 <p id="connect" class="connect">CONNECT</p>
+                 <p class="enterapp">ENTER APP</p>
                 <div class="socmed">
                     <div class="discord"><a href=""><img src="img/discord.png"></a></div>
                     <div class="twitter"><a href=""><img src="img/twitter.png"></a></div>
@@ -63,5 +74,7 @@
                 <img class="image3" src="img/image3.png">
             </div>
         </div>
+
+        <script src="js/connect.js"></script>
     </body>
 </html>
