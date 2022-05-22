@@ -81,8 +81,8 @@ p.connect {
     height: 73.3vh;
 
     position: absolute;
-    top: 16vh;
-    right: 2px;
+    top: 20vh;
+    right: -100px;
 }
 
 .image2 {
@@ -95,17 +95,18 @@ p.connect {
 
 
 .imggif img {
+    width: 75%;
     position: absolute;
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 .image3 {
-      animation-delay: 1s;
+      animation-delay: 2s;
     }
 .image2 {
-      animation-delay: 0.5s;
+      animation-delay: 1s;
     }
 .image1 {
       animation-delay: 0;
