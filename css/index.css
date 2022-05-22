@@ -89,7 +89,7 @@ p.connect {
 }
 
 p.enterapp {
- 
+    display: none;
     width: fit-content;
     padding: 5px 5.6vw;
     background-color: #fff;
