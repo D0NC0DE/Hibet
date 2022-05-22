@@ -1,0 +1,132 @@
+html{
+    height: 100%;
+}
+body {
+    background-color: #1F1D2B;
+    background-image: url("../img/BG.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.logo {
+    position: absolute;
+    left: 6vw;
+    top: -2vw;
+   width: 20.6vw;
+}
+
+div.conwal {
+    position: absolute;
+    left: 68.86vw;
+    top: 3.66vh;
+    padding: 1.1vh 4.7vw;
+    border-radius: 8px;
+    background-color: white;
+    color: #1E1E38;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.44vh;
+    line-height: 150%;  
+}
+
+div.section {
+    position: absolute;
+    left: 6.07vw;
+    top: 24vh;
+}
+
+h1.pname {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 11vh;
+}
+
+p.intro {
+    width: 45vw;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+p.connect {
+    width: 11.2vw;
+    padding: 5px 5.6vw;
+    background-color: #fff;
+    border-radius: 24px;
+    color: #1E1E38;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+.socmed {
+    width: 22.5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imggif {
+    width: 45.12vw;
+    height: 73.3vh;
+
+    position: absolute;
+    top: 16vh;
+    right: 2px;
+}
+
+.image2 {
+    transform: rotate(-15deg);
+}
+
+.image3 {
+    transform: rotate(15deg);
+}
+
+
+.imggif img {
+    position: absolute;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+.image3 {
+      animation-delay: 1s;
+    }
+.image2 {
+      animation-delay: 0.5s;
+    }
+.image1 {
+      animation-delay: 0;
+    }
+
+
+
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
