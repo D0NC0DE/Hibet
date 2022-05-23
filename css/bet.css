@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+body {
+    background-color: #1F1D2B;
+    background-image: url("../img/BG.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+div.logo {
+    position: absolute;
+    left: 6vw;
+    top: -1vw;
+   width: 20.6vw;
+}
+
+div.cbet img{
+    width: 16px;
+    height: 16px;
+    padding-left: 8px;
+}
+
+div.maccount img{
+    width: 16px;
+    height: 12px;
+    padding-left: 8px;
+}
+
+div.nav {
+    display: flex;
+    float: right;
+    margin-top: 48px;
+    margin-right: 48px;
+}
+
+div.cbet, div.mbet, div.maccount {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 16px;
+}
+
+.userinfo {
+    position: fixed;
+    width: fit-content;
+    right: 50px;
+    top: 131px;
+    background-color: white;
+    color: #1D2162;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.waladd {
+    display: inline;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.userwalad {
+    font-size: 16px;
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+    clear: both;
+    margin-top: 3000px;
+}
+
+.all, .soc, .bas, .cric {
+    width:60px;
+    height: 60px;
+    text-align: center;
+    padding: 8px 24px 0px;
+    margin: 10px;
+    background-color: #1F1D2B;
+    border-radius: 8px;
+}
+
+.cat p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.cat img {
+    width: 12px;
+    padding: 0px;
+    margin: 0px;
+}
