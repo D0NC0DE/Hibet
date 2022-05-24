@@ -257,3 +257,7 @@ main {
     text-decoration: none;
     color: white;
 }
+
+.soccerpage, .cricketpage, .basketpage {
+    display: none;
+}

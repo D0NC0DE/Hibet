@@ -55,31 +55,33 @@
 
         <!--all page-->
 
-        <div class="allpage">
+        <div class="allpage" id="pageall">
+            <!--nav-->
             <nav>
                 <div class="cat">
-                    <a href=""><div class="all active">
+                    <div class="all active" onclick="demoall()">
                         <img src="../img/all.png">
                         <p>All</p>
-                    </div></a>
+                    </div>
 
-                    <a href="soccer.html"><div class="soc">
+                    <div class="soc" onclick="demosoccer()">
                         <img src="../img/ball.png"><br>
                         <p>Soccer</p>
-                    </div></a>
+                    </div>
 
-                    <a href="basket.html"><div class="bas">
+                    <div class="bas" onclick="demobasket()">
                         <img src="../img/basetball.png"> <br>
                         <p>BasketBall</p>
-                    </div></a>
+                    </div>
 
-                    <a href="cricket.html"><div class="cric">
+                    <div class="cric" onclick="democricket()">
                         <img src="../img/wrestlng.png"><br>
                         <p>Cricket</p>
-                    </div></a>
-                    
+                    </div>
                 </div>
             </nav>
+
+            <!--navebd-->
 
             <!--bets-->
             <main>
@@ -118,12 +120,12 @@
 
                     <section class="eachbet">
                         <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                        <p class="gametime">17:30 <span class="gametype">Premier League - England</span></p>
                         <p class="date">16 May 2022</p>
-                        <p class="firstpart">Manchester United</p>
-                        <p class="secpart">Chelsea</p>
-                        <p class="aut">Created by Donnly</p> 
-                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                        <p class="firstpart">Burnley</p>
+                        <p class="secpart">Stoke City</p>
+                        <p class="aut">Created by Chrealay</p> 
+                        <div class="betname"><p>Over 2.5 goals(90mins)</p></div>
                         <!--like&dislike-->
                         <div class="interaction">
                             <div class="like">
@@ -146,6 +148,7 @@
                         </div>
                     </section >
                 </section>
+                <!--All soccer end-->
 
                 <!--Basketball-->
 
@@ -153,12 +156,12 @@
                     <h3 class="sechead">BasketBall</h3>
                     <section class="eachbet">
                         <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                        <p class="gametime">12:00 <span class="gametype">Germany</span></p>
                         <p class="date">16 May 2022</p>
-                        <p class="firstpart">Manchester United</p>
-                        <p class="secpart">Chelsea</p>
-                        <p class="aut">Created by Donnly</p> 
-                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                        <p class="firstpart">May Weather</p>
+                        <p class="secpart">Bobriski</p>
+                        <p class="aut">Created by Debo</p> 
+                        <div class="betname"><p>Will May Weather Beat Bobriski</p></div>
                         <!--like&dislike-->
                         <div class="interaction">
                             <div class="like">
@@ -183,12 +186,12 @@
 
                     <section class="eachbet">
                         <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Manchester United</p>
-                        <p class="secpart">Chelsea</p>
-                        <p class="aut">Created by Donnly</p> 
-                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                        <p class="gametime">12:00 <span class="gametype">USA</span></p>
+                        <p class="date">19 May 2022</p>
+                        <p class="firstpart">Joe Biden</p>
+                        <p class="secpart">Thomas Muller</p>
+                        <p class="aut">Created by Obama</p> 
+                        <div class="betname"><p>Will Joe Biden Beat Thomas Muller</p></div>
                         <!--like&dislike-->
                         <div class="interaction">
                             <div class="like">
@@ -278,27 +281,29 @@
             </main>
         </div>
 
-        <!--Soccer Page-->
+        <!--All page End-->
 
-        <div class="soccerpage">
+        <!--soccerpage-->
+        <div class="soccerpage" id="pagesoccer">
+            <!--nav-->
             <nav>
                 <div class="cat">
-                    <div class="all active">
+                    <div class="all" onclick="demoall()">
                         <img src="../img/all.png">
                         <p>All</p>
                     </div>
 
-                    <div class="soc">
+                    <div class="soc active" onclick="demosoccer()">
                         <img src="../img/ball.png"><br>
                         <p>Soccer</p>
                     </div>
 
-                    <div class="bas">
+                    <div class="bas" onclick="demobasket()">
                         <img src="../img/basetball.png"> <br>
                         <p>BasketBall</p>
                     </div>
 
-                    <div class="cric">
+                    <div class="cric" onclick="democricket()">
                         <img src="../img/wrestlng.png"><br>
                         <p>Cricket</p>
                     </div>
@@ -371,6 +376,40 @@
                         </div>
                     </section >
                 </section>
+            </main>
+        </div>
+        <!--soccerpage end-->
+
+        <!--Basketball page-->
+
+        <div class="basketpage" id="pagebasket">
+            <nav>
+                <div class="cat">
+                    <div class="all" onclick="demoall()">
+                        <img src="../img/all.png">
+                        <p>All</p>
+                    </div>
+
+                    <div class="soc" onclick="demosoccer()">
+                        <img src="../img/ball.png"><br>
+                        <p>Soccer</p>
+                    </div>
+
+                    <div class="bas active" onclick="demobasket()">
+                        <img src="../img/basetball.png"> <br>
+                        <p>BasketBall</p>
+                    </div>
+
+                    <div class="cric" onclick="democricket()">
+                        <img src="../img/wrestlng.png"><br>
+                        <p>Cricket</p>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <!--bets-->
+            <main>
 
                 <!--Basketball-->
 
@@ -436,8 +475,42 @@
                         </div>
                     </section >
                 </section>
+            </main>
+        </div>
+        <!--basketball end-->
 
-                <!--cricket-->
+        <!--cricket page-->
+        <div class="cricketpage" id="pagecricket">
+            <nav>
+                <div class="cat">
+                    <div class="all" onclick="demoall()">
+                        <img src="../img/all.png">
+                        <p>All</p>
+                    </div>
+
+                    <div class="soc" onclick="demosoccer()">
+                        <img src="../img/ball.png"><br>
+                        <p>Soccer</p>
+                    </div>
+
+                    <div class="bas" onclick="demobasket()">
+                        <img src="../img/basetball.png"> <br>
+                        <p>BasketBall</p>
+                    </div>
+
+                    <div class="cric  active" onclick="democricket()">
+                        <img src="../img/wrestlng.png"><br>
+                        <p>Cricket</p>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <!--bets-->
+            <main>
+
+                <!--Cricket-->
+
                 <section class="games">
                     <h3 class="sechead">Cricket</h3>
                     <section class="eachbet">
@@ -502,11 +575,9 @@
                 </section>
             </main>
         </div>
+        <!--cricket end-->
 
-        <script src="../js/connect.js"></script>
-        <script>
-            document.getElementById("userwalad").innerHTML = localStorage.getItem("userWalletAddress");
-        </script>
+        <script src="../js/pages.js"></script>
     </body>
 
 </html>
