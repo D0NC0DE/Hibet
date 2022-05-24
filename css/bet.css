@@ -87,12 +87,12 @@ div.cbet, div.mbet, div.maccount {
 
 .all, .soc, .bas, .cric {
     width:60px;
-    height: 60px;
+    height: fit-content;
     text-align: center;
-    padding: 8px 24px 0px;
+    padding: 8px 24px;
     margin: 10px;
-    background-color: #1F1D2B;
-    border-radius: 8px;
+    background-color: #000;
+    border-radius: 16px;
 }
 
 .cat p {
@@ -109,4 +109,142 @@ div.cbet, div.mbet, div.maccount {
     width: 12px;
     padding: 0px;
     margin: 0px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.eachbet {
+    position: relative;
+    background-color: #000;
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    margin-bottom: 14px;
+}
+
+.sechead {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0px;
+}
+
+.gametime {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 16px 16px 0px;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+.gametype {
+    opacity: 0.4;
+    padding-left: 24px;
+}
+
+.date{
+    padding: 6px 16px;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+.firstpart, .secpart {
+    padding: 6px 16px;
+    margin: 0px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.aut {
+    padding: 6px 16px;
+    margin: 0px;
+    opacity: 0.4;
+}
+
+.betname {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 12px;
+
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+    border: 2px solid #58A081;
+    border-radius: 8px;
+    padding: 0px 16px;
+}
+
+.interaction {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.like, .dislike {
+    padding-right: 50px;
+}
+
+.like p, .dislike p {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.like img, .dislike img {
+    width: 64px;
+    height: 64px;
+}
+
+.stake {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.dislike img {
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.stakewith {
+    opacity: 0.4;
+    margin: 4px;
+    padding: 2px;
+}
+
+.with10, .with100, .with1000, .with10000 {
+    background-color: #58A081;
+    width: fit-content;
+    padding: 2px 8px;
+    margin: 8px;
+}
+
+.like img:hover, .dislike img:hover {
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.25);
+}
+
+.with10:hover, .with100:hover, .with1000:hover, .with10000:hover {
+    opacity: 0.7;
+}
+
+.active {
+    background-color: #58A081;
+}
+
+.cat div:hover {
+    border: 1px solid #58A081;
 }
