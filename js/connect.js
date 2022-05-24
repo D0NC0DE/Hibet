@@ -11,7 +11,7 @@ var btn2 = document.getElementById("connect");
 
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -191,3 +191,4 @@ const changeNetwork = async() => {
       }
     }
   }
+  
