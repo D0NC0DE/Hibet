@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HiBet</title>
+
+        <!-- insert css stylesheet here-->
+        <link href="../css/bet.css" rel="stylesheet">
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../favicon_io/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="../favicon_io/android-chrome-512x512.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <!--Insert any other link stuffs here-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+
+        <!--insert meta data here-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Bet, Prediction, Sport, Earn">
+        <meta name="description" content="Predict the Future and Earn">
+        <meta name="author" content="Winner(Don)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Web3.js LIBRARY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
+            integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><a href="../index.html"><img src="../img/logo.png" width="100%"></a></div>
+            <div class="nav">
+                <div class="cbet">Create Bet<span><img src="../img/add.png" width="100%"></span></div>
+                <div class="mbet">My Bet</div>
+                <div class="maccount">My Account<span><img src="../img/dropdown.png" ></span></div>
+            </div>
+
+            <!--<div class="userinfo">
+                <div class="waladd">Hello, <span id="userwalad" class="userwalad"></span></div>
+                <div><span></span>Withdraw</div>
+                <div>Bet History</div>
+                <div>My Transaction</div>
+                <div>Disconnect Wallet</div>
+            </div>-->
+        
+        </header>
+
+        <!--all page-->
+
+        <div class="cricketpage">
+            <nav>
+                <div class="cat">
+                    <a href="bet.html"><div class="all">
+                        <img src="../img/all.png">
+                        <p>All</p>
+                    </div></a>
+
+                    <a href="soccer.html"><div class="soc">
+                        <img src="../img/ball.png"><br>
+                        <p>Soccer</p>
+                    </div></a>
+
+                    <a href="basket.html"><div class="bas">
+                        <img src="../img/basetball.png"> <br>
+                        <p>BasketBall</p>
+                    </div></a>
+
+                    <a href="cricket.html"><div class="cric  active">
+                        <img src="../img/wrestlng.png"><br>
+                        <p>Cricket</p>
+                    </div></a>
+                    
+                </div>
+            </nav>
+
+            <!--bets-->
+            <main>
+
+                <!--Cricket-->
+
+                <section class="games">
+                    <h3 class="sechead">Cricket</h3>
+                    <section class="eachbet">
+                        <div class="gamdet">
+                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                        <p class="date">16 May 2022</p>
+                        <p class="firstpart">Manchester United</p>
+                        <p class="secpart">Chelsea</p>
+                        <p class="aut">Created by Donnly</p> 
+                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                        <!--like&dislike-->
+                        <div class="interaction">
+                            <div class="like">
+                                <img src="../img/like.png">
+                                <p class="yes">YES</p>
+                            </div>
+
+                            <div class="dislike">
+                                <img src="../img/like.png">
+                                <p>NO</p>
+                            </div>
+                        </div>
+
+                        <div class="stake">
+                            <div class="stakewith">Stake with</div>
+                            <div class="with10">10</div>
+                            <div class="with100">100</div>
+                            <div class="with1000">1000</div>
+                            <div class="with10000">10000</div>
+                        </div>
+                    </section >
+
+                    <section class="eachbet">
+                        <div class="gamdet">
+                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                        <p class="date">16 May 2022</p>
+                        <p class="firstpart">Manchester United</p>
+                        <p class="secpart">Chelsea</p>
+                        <p class="aut">Created by Donnly</p> 
+                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                        <!--like&dislike-->
+                        <div class="interaction">
+                            <div class="like">
+                                <img src="../img/like.png">
+                                <p class="yes">YES</p>
+                            </div>
+
+                            <div class="dislike">
+                                <img src="../img/like.png">
+                                <p>NO</p>
+                            </div>
+                        </div>
+
+                        <div class="stake">
+                            <div class="stakewith">Stake with</div>
+                            <div class="with10">10</div>
+                            <div class="with100">100</div>
+                            <div class="with1000">1000</div>
+                            <div class="with10000">10000</div>
+                        </div>
+                    </section >
+                </section>
+            </main>
+        </div>
+
+        <script src="../js/connect.js"></script>
+        <script>
+            document.getElementById("userwalad").innerHTML = localStorage.getItem("userWalletAddress");
+        </script>
+    </body>
+
+</html>
