@@ -38,7 +38,7 @@
         <header>
             <div class="logo"><a href="../index.html"><img src="../img/logo.png" width="100%"></a></div>
             <div class="nav">
-                <div class="cbet">Create Bet<span><img src="../img/add.png" width="100%"></span></div>
+                <div class="cbet" onclick="democbet()">Create Bet<span><img src="../img/add.png" width="100%"></span></div>
                 <div class="mbet">My Bet</div>
                 <div class="maccount">My Account<span><img src="../img/dropdown.png" ></span></div>
             </div>
@@ -696,6 +696,65 @@
             </main>
         </div>
         <!--cricket end-->
+
+        <div class="formpage" id="pageform">
+            <nav>
+                <div class="cat">
+                    <div class="all" onclick="demoall()">
+                        <img src="../img/all.png">
+                        <p>All</p>
+                    </div>
+
+                    <div class="soc" onclick="demosoccer()">
+                        <img src="../img/ball.png"><br>
+                        <p>Soccer</p>
+                    </div>
+
+                    <div class="bas" onclick="demobasket()">
+                        <img src="../img/basetball.png"> <br>
+                        <p>BasketBall</p>
+                    </div>
+
+                    <div class="cric" onclick="democricket()">
+                        <img src="../img/wrestlng.png"><br>
+                        <p>Cricket</p>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <!--Form Page-->
+            <main>
+
+                <form action="" class="form">
+                    <label for="formcat">
+                        Category
+                    </label>
+                    <select id="formcat" name="Category" placeholder="category">
+                        <option value="Soccer">Soccer</option>
+                        <option value="BasketBall">BasketBall</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Others">Others</option>
+                    </select><br>
+
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="e.g. FA Cup Final"><br>
+
+                    <label for="topic">Topic</label>
+                    <input type="text" id="topic" placeholder="e.g. Manchester to beat Chelsea"><br>
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="e.g. England"><br>
+
+                    <label for="daytime">Date and Time</label>
+                    <input type="datetime-local" id="daytime" name="daytime"><br>
+
+                    <input type="button" value="Submit">
+                    <input type="button" value="Close">
+
+                </form>
+            </main>
+        </div>
 
         <script src="../js/pages.js"></script>
     </body>

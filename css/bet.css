@@ -258,6 +258,39 @@ main {
     color: white;
 }
 
-.soccerpage, .cricketpage, .basketpage {
+.soccerpage, .cricketpage, .basketpage, .formpage {
     display: none;
+}
+
+.form {
+    background-color: #000;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+label {
+    display: inline-block;
+    width: 10%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+input[type=text], input[type=datetime-local], select {
+    width: 80%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 37px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+input[type=button] {
+    float: right;
 }

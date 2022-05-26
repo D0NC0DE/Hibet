@@ -3,6 +3,7 @@ function demoall() {
     document.getElementById("pagesoccer").style.display= "none";
     document.getElementById("pagebasket").style.display = "none";
     document.getElementById("pagecricket").style.display = "none";
+    document.getElementById("pageform").style.display = "none";
   }
   
 function demosoccer() {
@@ -10,6 +11,7 @@ function demosoccer() {
     document.getElementById("pagesoccer").style.display = "block";
     document.getElementById("pagebasket").style.display = "none";
     document.getElementById("pagecricket").style.display = "none";
+    document.getElementById("pageform").style.display = "none";
   }
 
 function demobasket() {
@@ -17,6 +19,7 @@ function demobasket() {
     document.getElementById("pagesoccer").style.display= "none";
     document.getElementById("pagebasket").style.display = "block";
     document.getElementById("pagecricket").style.display = "none";
+    document.getElementById("pageform").style.display = "none";
   }
   
 function democricket() {
@@ -24,4 +27,13 @@ function democricket() {
     document.getElementById("pagesoccer").style.display = "none";
     document.getElementById("pagebasket").style.display = "none";
     document.getElementById("pagecricket").style.display = "block";
+    document.getElementById("pageform").style.display = "none";
   }
+
+function democbet() {
+  document.getElementById("pageall").style.display = "none";
+  document.getElementById("pagesoccer").style.display = "none";
+  document.getElementById("pagebasket").style.display = "none";
+  document.getElementById("pagecricket").style.display = "none";
+  document.getElementById("pageform").style.display = "block";
+}
