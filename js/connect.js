@@ -40,6 +40,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     main.style.display = "block";
+    btn.style.opacity = "1";
     btn2.style.opacity = "1";
   }
 }
