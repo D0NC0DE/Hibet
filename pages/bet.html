@@ -46,17 +46,24 @@
              <!--account page-->
 
             <div class="userinfo" id="userinfo">
-                <div class="waladd">Hello, <span id="userwalad" class="userwalad"></span></div>
-                <div><span></span>Withdraw</div>
-                <div>Bet History</div>
-                <div>My Transaction</div>
-                <div>Disconnect Wallet</div>
+                <div class="waladd">Hello, <span id="userwalad" class="userwalad connected"></span></div>
+                <div class="conwal" id="conwal">Connect Wallet</div>
+                <div class="enterapp">
+                    <div class="withdraw">
+                        <div class="wallet-balance"></div>
+                        <div class="withdraw-btn">Withdraw</div>
+                    </div>
+                    <div class="bet-his">Bet History</div>
+                    <div class="my-trans">My Transaction</div>
+                    <div id="connect" class="connect"></div>
+                    <div class="logout"><div class="logout-btn">Disconnect Wallet</div></div>
+                </div>
             </div>
         
         </header>
 
         <div id="wallpop" class="walpopup">
-            <div id="close" class="close"><img src="img/close.png"></div>
+            <div id="close" class="close"><img src="../img/close.png"></div>
             <div class="walletoption">
                 <p class="walletconnect">Wallet Connect</p>
                 <p class="metamask">Launch Metamask</p>
@@ -66,708 +73,710 @@
 
 
         <!--all page-->
+        <main class="main" id="main">
 
-        <div class="allpage" id="pageall">
-            <!--nav-->
-            <nav>
-                <div class="cat">
-                    <div class="all active" onclick="demoall()">
-                        <img src="../img/all.png">
-                        <p>All</p>
+            <div class="allpage" id="pageall">
+                <!--nav-->
+                <nav>
+                    <div class="cat">
+                        <div class="all active" onclick="demoall()">
+                            <img src="../img/all.png">
+                            <p>All</p>
+                        </div>
+
+                        <div class="soc" onclick="demosoccer()">
+                            <img src="../img/ball.png"><br>
+                            <p>Soccer</p>
+                        </div>
+
+                        <div class="bas" onclick="demobasket()">
+                            <img src="../img/basetball.png"> <br>
+                            <p>BasketBall</p>
+                        </div>
+
+                        <div class="cric" onclick="democricket()">
+                            <img src="../img/wrestlng.png"><br>
+                            <p>Cricket</p>
+                        </div>
                     </div>
+                </nav>
 
-                    <div class="soc" onclick="demosoccer()">
-                        <img src="../img/ball.png"><br>
-                        <p>Soccer</p>
-                    </div>
+                <!--navebd-->
 
-                    <div class="bas" onclick="demobasket()">
-                        <img src="../img/basetball.png"> <br>
-                        <p>BasketBall</p>
-                    </div>
+                <!--bets-->
+                <main>
+                    <!--Soccer-->
+                    <section class="games">
+                        <h3 class="sechead">Soccer</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Manchester United</p>
+                            <p class="secpart">Chelsea</p>
+                            <p class="aut">Created by Donnly</p> 
+                            <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
 
-                    <div class="cric" onclick="democricket()">
-                        <img src="../img/wrestlng.png"><br>
-                        <p>Cricket</p>
-                    </div>
-                </div>
-            </nav>
-
-            <!--navebd-->
-
-            <!--bets-->
-            <main>
-                <!--Soccer-->
-                <section class="games">
-                    <h3 class="sechead">Soccer</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Manchester United</p>
-                        <p class="secpart">Chelsea</p>
-                        <p class="aut">Created by Donnly</p> 
-                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
                             </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
                             </div>
-                        </div>
+                        </section >
 
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:30 <span class="gametype">Premier League - England</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Burnley</p>
+                            <p class="secpart">Stoke City</p>
+                            <p class="aut">Created by Chrealay</p> 
+                            <div class="betname"><p>Over 2.5 goals(90mins)</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
 
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:30 <span class="gametype">Premier League - England</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Burnley</p>
-                        <p class="secpart">Stoke City</p>
-                        <p class="aut">Created by Chrealay</p> 
-                        <div class="betname"><p>Over 2.5 goals(90mins)</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-                </section>
-                <!--All soccer end-->
-
-                <!--Basketball-->
-
-                <section class="games">
-                    <h3 class="sechead">BasketBall</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">Germany</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">May Weather</p>
-                        <p class="secpart">Bobriski</p>
-                        <p class="aut">Created by Debo</p> 
-                        <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
                             </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
                             </div>
-                        </div>
+                        </section >
+                    </section>
+                    <!--All soccer end-->
 
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
+                    <!--Basketball-->
 
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">USA</span></p>
-                        <p class="date">19 May 2022</p>
-                        <p class="firstpart">Joe Biden</p>
-                        <p class="secpart">Thomas Muller</p>
-                        <p class="aut">Created by Obama</p> 
-                        <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
+                    <section class="games">
+                        <h3 class="sechead">BasketBall</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">Germany</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">May Weather</p>
+                            <p class="secpart">Bobriski</p>
+                            <p class="aut">Created by Debo</p> 
+                            <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-                </section>
-
-                <!--cricket-->
-                <section class="games">
-                    <h3 class="sechead">Cricket</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Winner Don</p>
-                        <p class="secpart">Slander</p>
-                        <p class="aut">Created by Lola</p> 
-                        <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
                             </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
                             </div>
-                        </div>
+                        </section >
 
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">USA</span></p>
+                            <p class="date">19 May 2022</p>
+                            <p class="firstpart">Joe Biden</p>
+                            <p class="secpart">Thomas Muller</p>
+                            <p class="aut">Created by Obama</p> 
+                            <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
 
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
-                        <p class="date">24 May 2022</p>
-                        <p class="firstpart">Ella</p>
-                        <p class="secpart">Malloc</p>
-                        <p class="aut">Created by Febe</p> 
-                        <div class="betname"><p>Will Ella Beat Malloc?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-                </section>
-            </main>
-        </div>
-
-        <!--All page End-->
-
-        <!--soccerpage-->
-        <div class="soccerpage" id="pagesoccer">
-            <!--nav-->
-            <nav>
-                <div class="cat">
-                    <div class="all" onclick="demoall()">
-                        <img src="../img/all.png">
-                        <p>All</p>
-                    </div>
-
-                    <div class="soc active" onclick="demosoccer()">
-                        <img src="../img/ball.png"><br>
-                        <p>Soccer</p>
-                    </div>
-
-                    <div class="bas" onclick="demobasket()">
-                        <img src="../img/basetball.png"> <br>
-                        <p>BasketBall</p>
-                    </div>
-
-                    <div class="cric" onclick="democricket()">
-                        <img src="../img/wrestlng.png"><br>
-                        <p>Cricket</p>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            <!--bets-->
-            <main>
-                <!--Soccer-->
-                <section class="games">
-                    <h3 class="sechead">Soccer</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Manchester United</p>
-                        <p class="secpart">Chelsea</p>
-                        <p class="aut">Created by Donnly</p> 
-                        <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
                             </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
                             </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
+                        </section >
                     </section>
 
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:30 <span class="gametype">Premier League - England</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Burnley</p>
-                        <p class="secpart">Stoke City</p>
-                        <p class="aut">Created by Chrealay</p> 
-                        <div class="betname"><p>Over 2.5 goals(90mins)</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
+                    <!--cricket-->
+                    <section class="games">
+                        <h3 class="sechead">Cricket</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Winner Don</p>
+                            <p class="secpart">Slander</p>
+                            <p class="aut">Created by Lola</p> 
+                            <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
                             </div>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
                             </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
+                            <p class="date">24 May 2022</p>
+                            <p class="firstpart">Ella</p>
+                            <p class="secpart">Malloc</p>
+                            <p class="aut">Created by Febe</p> 
+                            <div class="betname"><p>Will Ella Beat Malloc?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+                    </section>
+                </main>
+            </div>
+
+            <!--All page End-->
+
+            <!--soccerpage-->
+            <div class="soccerpage" id="pagesoccer">
+                <!--nav-->
+                <nav>
+                    <div class="cat">
+                        <div class="all" onclick="demoall()">
+                            <img src="../img/all.png">
+                            <p>All</p>
                         </div>
 
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
+                        <div class="soc active" onclick="demosoccer()">
+                            <img src="../img/ball.png"><br>
+                            <p>Soccer</p>
                         </div>
-                    </section >
-                </section>
-            </main>
-        </div>
-        <!--soccerpage end-->
 
-        <!--Basketball page-->
+                        <div class="bas" onclick="demobasket()">
+                            <img src="../img/basetball.png"> <br>
+                            <p>BasketBall</p>
+                        </div>
 
-        <div class="basketpage" id="pagebasket">
-            <nav>
-                <div class="cat">
-                    <div class="all" onclick="demoall()">
-                        <img src="../img/all.png">
-                        <p>All</p>
+                        <div class="cric" onclick="democricket()">
+                            <img src="../img/wrestlng.png"><br>
+                            <p>Cricket</p>
+                        </div>
+                        
                     </div>
+                </nav>
 
-                    <div class="soc" onclick="demosoccer()">
-                        <img src="../img/ball.png"><br>
-                        <p>Soccer</p>
+                <!--bets-->
+                <main>
+                    <!--Soccer-->
+                    <section class="games">
+                        <h3 class="sechead">Soccer</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:00 <span class="gametype">Premier League - England</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Manchester United</p>
+                            <p class="secpart">Chelsea</p>
+                            <p class="aut">Created by Donnly</p> 
+                            <div class="betname"><p>Manchester United To Beat Chelsea</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section>
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:30 <span class="gametype">Premier League - England</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Burnley</p>
+                            <p class="secpart">Stoke City</p>
+                            <p class="aut">Created by Chrealay</p> 
+                            <div class="betname"><p>Over 2.5 goals(90mins)</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+                    </section>
+                </main>
+            </div>
+            <!--soccerpage end-->
+
+            <!--Basketball page-->
+
+            <div class="basketpage" id="pagebasket">
+                <nav>
+                    <div class="cat">
+                        <div class="all" onclick="demoall()">
+                            <img src="../img/all.png">
+                            <p>All</p>
+                        </div>
+
+                        <div class="soc" onclick="demosoccer()">
+                            <img src="../img/ball.png"><br>
+                            <p>Soccer</p>
+                        </div>
+
+                        <div class="bas active" onclick="demobasket()">
+                            <img src="../img/basetball.png"> <br>
+                            <p>BasketBall</p>
+                        </div>
+
+                        <div class="cric" onclick="democricket()">
+                            <img src="../img/wrestlng.png"><br>
+                            <p>Cricket</p>
+                        </div>
+                        
                     </div>
+                </nav>
 
-                    <div class="bas active" onclick="demobasket()">
-                        <img src="../img/basetball.png"> <br>
-                        <p>BasketBall</p>
+                <!--bets-->
+                <main>
+
+                    <!--Basketball-->
+
+                    <section class="games">
+                        <h3 class="sechead">BasketBall</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">Germany</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">May Weather</p>
+                            <p class="secpart">Bobriski</p>
+                            <p class="aut">Created by Debo</p> 
+                            <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">USA</span></p>
+                            <p class="date">19 May 2022</p>
+                            <p class="firstpart">Joe Biden</p>
+                            <p class="secpart">Thomas Muller</p>
+                            <p class="aut">Created by Obama</p> 
+                            <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">Germany</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">May Weather</p>
+                            <p class="secpart">Bobriski</p>
+                            <p class="aut">Created by Debo</p> 
+                            <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">12:00 <span class="gametype">USA</span></p>
+                            <p class="date">19 May 2022</p>
+                            <p class="firstpart">Joe Biden</p>
+                            <p class="secpart">Thomas Muller</p>
+                            <p class="aut">Created by Obama</p> 
+                            <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+                    </section>
+                </main>
+            </div>
+            <!--basketball end-->
+
+            <!--cricket page-->
+            <div class="cricketpage" id="pagecricket">
+                <nav>
+                    <div class="cat">
+                        <div class="all" onclick="demoall()">
+                            <img src="../img/all.png">
+                            <p>All</p>
+                        </div>
+
+                        <div class="soc" onclick="demosoccer()">
+                            <img src="../img/ball.png"><br>
+                            <p>Soccer</p>
+                        </div>
+
+                        <div class="bas" onclick="demobasket()">
+                            <img src="../img/basetball.png"> <br>
+                            <p>BasketBall</p>
+                        </div>
+
+                        <div class="cric  active" onclick="democricket()">
+                            <img src="../img/wrestlng.png"><br>
+                            <p>Cricket</p>
+                        </div>
+                        
                     </div>
+                </nav>
 
-                    <div class="cric" onclick="democricket()">
-                        <img src="../img/wrestlng.png"><br>
-                        <p>Cricket</p>
+                <!--bets-->
+                <main>
+
+                    <!--Cricket-->
+
+                    <section class="games">
+                        <h3 class="sechead">Cricket</h3>
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Winner Don</p>
+                            <p class="secpart">Slander</p>
+                            <p class="aut">Created by Lola</p> 
+                            <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
+                            <p class="date">24 May 2022</p>
+                            <p class="firstpart">Ella</p>
+                            <p class="secpart">Malloc</p>
+                            <p class="aut">Created by Febe</p> 
+                            <div class="betname"><p>Will Ella Beat Malloc?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
+                            <p class="date">16 May 2022</p>
+                            <p class="firstpart">Winner Don</p>
+                            <p class="secpart">Slander</p>
+                            <p class="aut">Created by Lola</p> 
+                            <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+
+                        <section class="eachbet">
+                            <div class="gamdet">
+                            <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
+                            <p class="date">24 May 2022</p>
+                            <p class="firstpart">Ella</p>
+                            <p class="secpart">Malloc</p>
+                            <p class="aut">Created by Febe</p> 
+                            <div class="betname"><p>Will Ella Beat Malloc?</p></div>
+                            <!--like&dislike-->
+                            <div class="interaction">
+                                <div class="like">
+                                    <img src="../img/like.png">
+                                    <p class="yes">YES</p>
+                                </div>
+
+                                <div class="dislike">
+                                    <img src="../img/like.png">
+                                    <p>NO</p>
+                                </div>
+                            </div>
+
+                            <div class="stake">
+                                <div class="stakewith">Stake with</div>
+                                <div class="with10">10</div>
+                                <div class="with100">100</div>
+                                <div class="with1000">1000</div>
+                                <div class="with10000">10000</div>
+                            </div>
+                        </section >
+                    </section>
+                </main>
+            </div>
+            <!--cricket end-->
+
+            <div class="formpage" id="pageform">
+                <nav>
+                    <div class="cat">
+                        <div class="all" onclick="demoall()">
+                            <img src="../img/all.png">
+                            <p>All</p>
+                        </div>
+
+                        <div class="soc" onclick="demosoccer()">
+                            <img src="../img/ball.png"><br>
+                            <p>Soccer</p>
+                        </div>
+
+                        <div class="bas" onclick="demobasket()">
+                            <img src="../img/basetball.png"> <br>
+                            <p>BasketBall</p>
+                        </div>
+
+                        <div class="cric" onclick="democricket()">
+                            <img src="../img/wrestlng.png"><br>
+                            <p>Cricket</p>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-            </nav>
+                </nav>
 
-            <!--bets-->
-            <main>
+                <!--Form Page-->
+                <main>
 
-                <!--Basketball-->
+                    <form action="" class="form">
+                        <label for="formcat">
+                            Category
+                        </label>
+                        <select id="formcat" name="Category" placeholder="category">
+                            <option value="Soccer">Soccer</option>
+                            <option value="BasketBall">BasketBall</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Others">Others</option>
+                        </select><br>
 
-                <section class="games">
-                    <h3 class="sechead">BasketBall</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">Germany</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">May Weather</p>
-                        <p class="secpart">Bobriski</p>
-                        <p class="aut">Created by Debo</p> 
-                        <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="e.g. FA Cup Final"><br>
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
+                        <label for="topic">Topic</label>
+                        <input type="text" id="topic" placeholder="e.g. Manchester to beat Chelsea"><br>
 
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
+                        <label for="country">Country</label>
+                        <input type="text" id="country" placeholder="e.g. England"><br>
 
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">USA</span></p>
-                        <p class="date">19 May 2022</p>
-                        <p class="firstpart">Joe Biden</p>
-                        <p class="secpart">Thomas Muller</p>
-                        <p class="aut">Created by Obama</p> 
-                        <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
+                        <label for="daytime">Date and Time</label>
+                        <input type="datetime-local" id="daytime" name="daytime"><br>
+                        
+                        <input type="button" value="Submit" id="submit">
+                        <input type="button" value="Close" id="close" onclick="demoClose()">
 
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">Germany</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">May Weather</p>
-                        <p class="secpart">Bobriski</p>
-                        <p class="aut">Created by Debo</p> 
-                        <div class="betname"><p>Will May Weather Beat Bobriski?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">12:00 <span class="gametype">USA</span></p>
-                        <p class="date">19 May 2022</p>
-                        <p class="firstpart">Joe Biden</p>
-                        <p class="secpart">Thomas Muller</p>
-                        <p class="aut">Created by Obama</p> 
-                        <div class="betname"><p>Will Joe Biden Beat Thomas Muller?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-                </section>
-            </main>
-        </div>
-        <!--basketball end-->
-
-        <!--cricket page-->
-        <div class="cricketpage" id="pagecricket">
-            <nav>
-                <div class="cat">
-                    <div class="all" onclick="demoall()">
-                        <img src="../img/all.png">
-                        <p>All</p>
-                    </div>
-
-                    <div class="soc" onclick="demosoccer()">
-                        <img src="../img/ball.png"><br>
-                        <p>Soccer</p>
-                    </div>
-
-                    <div class="bas" onclick="demobasket()">
-                        <img src="../img/basetball.png"> <br>
-                        <p>BasketBall</p>
-                    </div>
-
-                    <div class="cric  active" onclick="democricket()">
-                        <img src="../img/wrestlng.png"><br>
-                        <p>Cricket</p>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            <!--bets-->
-            <main>
-
-                <!--Cricket-->
-
-                <section class="games">
-                    <h3 class="sechead">Cricket</h3>
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Winner Don</p>
-                        <p class="secpart">Slander</p>
-                        <p class="aut">Created by Lola</p> 
-                        <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
-                        <p class="date">24 May 2022</p>
-                        <p class="firstpart">Ella</p>
-                        <p class="secpart">Malloc</p>
-                        <p class="aut">Created by Febe</p> 
-                        <div class="betname"><p>Will Ella Beat Malloc?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">17:00 <span class="gametype">Ethopia</span></p>
-                        <p class="date">16 May 2022</p>
-                        <p class="firstpart">Winner Don</p>
-                        <p class="secpart">Slander</p>
-                        <p class="aut">Created by Lola</p> 
-                        <div class="betname"><p>Will Pelumi Beat Dele?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-
-                    <section class="eachbet">
-                        <div class="gamdet">
-                        <p class="gametime">15:00 <span class="gametype">Ghana</span></p>
-                        <p class="date">24 May 2022</p>
-                        <p class="firstpart">Ella</p>
-                        <p class="secpart">Malloc</p>
-                        <p class="aut">Created by Febe</p> 
-                        <div class="betname"><p>Will Ella Beat Malloc?</p></div>
-                        <!--like&dislike-->
-                        <div class="interaction">
-                            <div class="like">
-                                <img src="../img/like.png">
-                                <p class="yes">YES</p>
-                            </div>
-
-                            <div class="dislike">
-                                <img src="../img/like.png">
-                                <p>NO</p>
-                            </div>
-                        </div>
-
-                        <div class="stake">
-                            <div class="stakewith">Stake with</div>
-                            <div class="with10">10</div>
-                            <div class="with100">100</div>
-                            <div class="with1000">1000</div>
-                            <div class="with10000">10000</div>
-                        </div>
-                    </section >
-                </section>
-            </main>
-        </div>
-        <!--cricket end-->
-
-        <div class="formpage" id="pageform">
-            <nav>
-                <div class="cat">
-                    <div class="all" onclick="demoall()">
-                        <img src="../img/all.png">
-                        <p>All</p>
-                    </div>
-
-                    <div class="soc" onclick="demosoccer()">
-                        <img src="../img/ball.png"><br>
-                        <p>Soccer</p>
-                    </div>
-
-                    <div class="bas" onclick="demobasket()">
-                        <img src="../img/basetball.png"> <br>
-                        <p>BasketBall</p>
-                    </div>
-
-                    <div class="cric" onclick="democricket()">
-                        <img src="../img/wrestlng.png"><br>
-                        <p>Cricket</p>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            <!--Form Page-->
-            <main>
-
-                <form action="" class="form">
-                    <label for="formcat">
-                        Category
-                    </label>
-                    <select id="formcat" name="Category" placeholder="category">
-                        <option value="Soccer">Soccer</option>
-                        <option value="BasketBall">BasketBall</option>
-                        <option value="Cricket">Cricket</option>
-                        <option value="Others">Others</option>
-                    </select><br>
-
-                    <label for="title">Title</label>
-                    <input type="text" id="title" placeholder="e.g. FA Cup Final"><br>
-
-                    <label for="topic">Topic</label>
-                    <input type="text" id="topic" placeholder="e.g. Manchester to beat Chelsea"><br>
-
-                    <label for="country">Country</label>
-                    <input type="text" id="country" placeholder="e.g. England"><br>
-
-                    <label for="daytime">Date and Time</label>
-                    <input type="datetime-local" id="daytime" name="daytime"><br>
-                    
-                    <input type="button" value="Submit" id="submit">
-                    <input type="button" value="Close" id="close" onclick="demoClose()">
-
-                </form>
-            </main>
-        </div>
-
+                    </form>
+                </main>
+            </div>
+        </main>
+        <script src="../js/connect.js"></script>
         <script src="../js/pages.js"></script>
     </body>
 

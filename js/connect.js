@@ -151,6 +151,8 @@ const showUserDashboard = async () => {
     // show the user's wallet address
      showUserWalletAddress();
 
+     getWalletBalance();
+
      changeNetwork();
   };
 
@@ -159,7 +161,24 @@ const showUserWalletAddress = () => {
     const walletAddressEl = document.querySelector(".connected");
     walletAddressEl.innerHTML = window.userWalletAddress;
   };
-  
+
+// get the user's wallet balance
+const getWalletBalance = async () => {
+  // check if there is global userWalletAddress variable
+  if (!window.userWalletAddress) {
+    return false;
+  }
+
+  // get the user's wallet balance
+  const balance = await window.web3.eth.getBalance(window.userWalletAddress);
+
+  // convert the balance to ether
+  document.querySelector(".wallet-balance").innerHTML = web3.utils.fromWei(
+    balance,
+    "ether"
+  );
+};
+
 const changeNetwork = async() => {
     if (window.userWalletAddress) {
       try {
@@ -192,4 +211,17 @@ const changeNetwork = async() => {
       }
     }
   }
+
+  const logout = () => {
+    // set the global userWalletAddress variable to null
+    window.userWalletAddress = null;
   
+    // remove the user's wallet address from local storage
+    window.localStorage.removeItem("userWalletAddress");
+  
+    // show the user dashboard
+    showUserDashboard();
+  };
+  
+  // when the user clicks the logout button run the logout function
+  document.querySelector(".logout-btn").addEventListener("click", logout);

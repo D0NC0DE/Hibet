@@ -51,27 +51,77 @@ div.cbet, div.mbet, div.maccount {
 }
 
 .userinfo {
-    position: fixed;
+    position: absolute;
     width: fit-content;
-    right: 50px;
-    top: 131px;
+    right: 70px;
+    top: 105px;
     background-color: white;
-    color: #1D2162;
+    color: #000;
     border-radius: 8px;
     z-index: 1;
 }
 
 .waladd {
-    display: inline;
     font-family: 'Arial';
-    font-style: normal;
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 700;
+    padding: 8px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+.enterapp {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.withdraw {
+    display: flex;
+    justify-content: space-around;
+    color: #1D2162;
+    padding: 10px 0px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+.withdraw-btn {
+    background-color: #1D2162;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 8px;
+}
+
+.bet-his, .my-trans, .connect {
+    padding: 16px 32px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.logout {
+    text-align: center;
+    padding: 32px;
+    color: white;
+}
+
+.logout-btn {
+    margin: 0px auto;
+    background-color: #1D2162;
+    width: fit-content;
+    padding: 6px 24px;
+    border-radius: 8px;
+}
+
+.conwal {
+    margin: 12px;
+    padding: 12px 24px;;
+    border-radius: 8px;
+    color: white;
+    background-color: #1D2162;
+}
+
+.wallet-balance {
+    font-weight: 700;
     line-height: 37px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 10px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .userwalad {
@@ -337,4 +387,39 @@ input[type=button] {
     position: fixed;
     z-index: 1;
    margin-top: 180px;
+}
+
+.walletoption {
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.walletoption p{
+    text-align: center;
+    background-color: #1D1F4B;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 41px;
+    padding: 12px 36px;
+    margin: 12px;
+}
+
+.walletconnect {
+    opacity: 0.7;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.fortmatic {
+    opacity: 0.7;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.main {
+    width: 100%;
 }

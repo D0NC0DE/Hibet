@@ -39,6 +39,7 @@ div.conwal {
 }
 
 div.connected {
+    display: none;
     position: absolute;
     left: 68.86vw;
     top: 3.66vh;
