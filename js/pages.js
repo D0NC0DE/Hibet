@@ -37,3 +37,17 @@ function democbet() {
   document.getElementById("pagecricket").style.display = "none";
   document.getElementById("pageform").style.display = "block";
 }
+
+function demoClose() {
+  document.getElementById("pageall").style.display = "block";
+  document.getElementById("pageform").style.display = "none";
+}
+
+function demoMyAccount() {
+  var x = document.getElementById('userinfo');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
